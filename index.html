@@ -1,0 +1,747 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Tao Ji  紀焘  </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="151c8ffd-17f5-8078-ad6a-c80c4c5c2852" class="page sans"><header><h1 class="page-title" dir="auto">Tao Ji  紀焘  </h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80d6-a1eb-c8c9d5d785bf" class="column-list"><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8068-ae5c-f8115cdd66b7" style="width:75%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8045-904d-dc7d0bef04e5" class="">I’m currently an Assistant Professor and Ph.D. advisor at <a href="https://nlp.fudan.edu.cn/">FudanNLP Lab</a> and the <a href="https://dfll.fudan.edu.cn/english/list.htm">English Dept.</a>, College of Foreign Languages and Literatures, Fudan University. I was previously a postdoc at FudanNLP Lab, advised by Profs. <a href="https://xuanjing-huang.github.io/">Xuanjing Huang</a>, <a href="http://qizhang.info/">Qi Zhang</a>, and <a href="https://xpqiu.github.io/en.html">Xipeng Qiu</a>. I received my B.S. (2017) and Ph.D. (2023) in Computer Science from East China Normal University, advised by Profs. <a href="https://ybwu.org/">Yuanbin Wu</a> and <a href="https://www.xiaolingwang.cn/">Xiaoling Wang</a>.</p></div><div style="display:contents" dir="auto"><h2 id="204c8ffd-17f5-8097-beec-c57b7be2f716" class="">Research</h2></div><div style="display:contents" dir="auto"><p id="28ac8ffd-17f5-8023-96b4-e2816f5fc69c" class="">My research bridges Linguistics and Computer Science, focusing on the architectural design and development of Large Language Models (LLMs). I am particularly interested in ➊ Efficient infrastructure via algorithm-hardware co-design, ➋ Language-centric multimodal in-context learning, and ➌ Native long-context modeling in LLMs.</p></div><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-8011-a69c-d60770113d76" class=""><mark class="highlight-red"><strong>Openings</strong></mark><mark class="highlight-red">: I am looking for motivated students and interns who are excited to build </mark><em><mark class="highlight-red">linguistics-inspired </mark></em><mark class="highlight-red">and/or</mark><em><mark class="highlight-red"> compute-efficient</mark></em><mark class="highlight-red"> LLMs. </mark><mark class="highlight-red"><strong><a href="https://fudan-nlp.feishu.cn/share/base/form/shrcn29UYq1MCpTH0GBZh3AWPPg">Apply here</a></strong></mark><mark class="highlight-red"> or reach out directly!</mark></p></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-809f-8e6f-f2e42463ec08" style="width:25%" class="column"><div style="display:contents" dir="ltr"><figure id="204c8ffd-17f5-800c-bf9b-d1b3d6a5e23f" class="image"><a href="Tao%20Ji%20%E7%B4%80%E7%84%98/de42ffd0-ed19-4a38-984e-1fd9df28e2b5.png"><img style="width:240.0909435392194px" src="Tao%20Ji%20%E7%B4%80%E7%84%98/de42ffd0-ed19-4a38-984e-1fd9df28e2b5.png"/></a><figcaption><strong><a href="https://scholar.google.com/citations?user=tZlj-O8AAAAJ">Google Scholar</a></strong><strong> </strong>|<strong> </strong><strong><a href="https://github.com/JT-Ushio">Github</a></strong><strong> </strong>| <strong><a href="mailto:taoji@fudan.edu.cn">Email</a></strong><strong> </strong></figcaption></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="287c8ffd-17f5-80a5-9156-e90e1ce024d1"/></div><div style="display:contents" dir="auto"><h2 id="1ddc8ffd-17f5-80f4-a523-ec902a45fcaa" class="">News</h2></div><div style="display:contents" dir="auto"><div id="201c8ffd-17f5-80c7-988c-c9f92e8e300c" class="column-list"><div style="display:contents" dir="auto"><div id="201c8ffd-17f5-8007-a3ae-ce24ada9eb6b" style="width:12.5%" class="column"><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-80d1-b652-ca60616fbb97" class=""><code>Sep 2025</code>📜</p></div><div style="display:contents" dir="auto"><hr id="288c8ffd-17f5-8024-9936-f4e90a540b1f"/></div><div style="display:contents" dir="auto"><p id="2a1c8ffd-17f5-803a-aa2d-d4fb1f9c999e" class=""><code>Sep 2025</code>📜</p></div><div style="display:contents" dir="auto"><hr id="2a1c8ffd-17f5-8058-b1f1-f6e5fc451aa5"/></div><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-8092-8b99-d189e37f0565" class=""><code>Jul 2025</code>📜</p></div><div style="display:contents" dir="auto"><hr id="201c8ffd-17f5-804a-91b3-d5a23092896c"/></div><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-8022-91ce-f859f09a70b0" class=""><code>May 2025</code>🎓<br/> <br/> </p></div><div style="display:contents" dir="auto"><hr id="288c8ffd-17f5-80ef-8206-fa09afe2ea87"/></div><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-808b-8c4c-e469fb7ce7b6" class=""><code>May 2025</code>🎓<br/> <br/> </p></div><div style="display:contents" dir="auto"><hr id="2a1c8ffd-17f5-8048-8ce7-d0934e1f7795"/></div><div style="display:contents" dir="auto"><p id="2a1c8ffd-17f5-808e-97b9-f0f559f3f044" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="201c8ffd-17f5-80a0-89b4-c66a8298beb6" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-8004-bfed-d02d81eefcfc" class="">🎉 Two papers accepted to <mark class="highlight-default"><mark class="highlight-default_background"><strong>NeurIPS</strong></mark></mark><mark class="highlight-default"><mark class="highlight-default_background">:</mark></mark> one Spotlight (<em><mark class="highlight-red">top 1.8%</mark></em>), one D&amp;B Track</p></div><div style="display:contents" dir="auto"><hr id="288c8ffd-17f5-80f3-a59d-d41c3a316261"/></div><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-80c1-a64f-ecb719ab17eb" class="">🎉 Two papers accepted to <mark class="highlight-default"><mark class="highlight-default_background"><strong>EMNLP</strong></mark></mark>: one Demo, one Findings</p></div><div style="display:contents" dir="auto"><hr id="2a1c8ffd-17f5-8081-ba85-ff4ce5006bce"/></div><div style="display:contents" dir="auto"><p id="2a1c8ffd-17f5-8074-99dc-cb0df74dbda7" class="">🎉 Two papers accepted to <mark class="highlight-default"><mark class="highlight-default_background"><strong>ACL</strong></mark></mark>: one Oral (<em><mark class="highlight-red">top 2.6%</mark></em>), one Main (<em><mark class="highlight-red">top 20.3%</mark></em>)</p></div><div style="display:contents" dir="auto"><hr id="201c8ffd-17f5-80dd-b58e-fcf5ac5e7b16"/></div><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-80d8-b424-de7306037844" class="">🎉 Congratulations to <mark class="highlight-orange"><strong>Yufang Liu</strong></mark> on earning her Ph.D.! I had the honor of co-advising her on her <a href="https://ojs.aaai.org/index.php/AAAI/article/view/17586">AAAI21</a>, <a href="https://aclanthology.org/2024.emnlp-main.1016/">EMNLP24</a>, and <a href="https://arxiv.org/abs/2503.04167">ACL25</a> work. I deeply appreciate her self-driven, focused, and proactive approach to research and her well-rounded abilities. She is joining Meituan Research. Best wishes.</p></div><div style="display:contents" dir="auto"><hr id="201c8ffd-17f5-80b9-a934-e59d667b6ae6"/></div><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-8005-914d-d75f6e60d5e3" class="">🎉 Congratulations to <mark class="highlight-orange"><strong>Yanting Liu</strong></mark> on completing her Master’s degree! I was delighted to co-advise her on her <a href="https://aclanthology.org/2024.emnlp-main.1053/">EMNLP24</a> work. She is intelligent and hardworking. Though I wish she had pursue a Ph.D., I’m glad to see her moving forward—joining ByteDance to work on multimodal models. Best wishes.</p></div><div style="display:contents" dir="auto"><hr id="2a1c8ffd-17f5-807c-b58f-ed6e44577df5"/></div><div style="display:contents" dir="auto"><p id="2a1c8ffd-17f5-8056-aac4-e15d1429762f" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="151c8ffd-17f5-80d8-882d-fda545936681" class="">Selected Publications    </h2></div><div style="display:contents" dir="auto"><blockquote id="204c8ffd-17f5-801e-b9e7-cced577f49bf" class=""><strong><a href="https://scholar.google.com/citations?user=tZlj-O8AAAAJ">All Papers</a></strong><strong>,  </strong><code>*</code> indicates equal contribution,  <code>#</code><strong> </strong>indicates corresponding author</blockquote></div><div style="display:contents" dir="auto"><div id="28ac8ffd-17f5-80ff-884f-f4f5a13b6da8" class="column-list"><div style="display:contents" dir="auto"><div id="28ac8ffd-17f5-8077-b9f4-d1f6a931c44c" style="width:12.5%" class="column"><div style="display:contents" dir="auto"><p id="28ac8ffd-17f5-8069-b016-e53993f18c8f" class=""><mark class="highlight-blue"><mark class="highlight-blue_background">  </mark></mark><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>NeurIPS25</strong></mark></mark><mark class="highlight-blue"><mark class="highlight-blue_background">  <br/>  </mark></mark><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>Spotlight</strong></mark></mark><mark class="highlight-blue"><mark class="highlight-blue_background">  </mark></mark></p></div></div></div><div style="display:contents" dir="auto"><div id="28ac8ffd-17f5-8011-808d-f01b6dd7fb56" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="28ac8ffd-17f5-800b-bf62-eaf78e356e35" class=""><strong><a href="https://arxiv.org/abs/2505.18966">Protein Design with Dynamic Protein Vocabulary</a></strong></p></div><div style="display:contents" dir="auto"><p id="28ac8ffd-17f5-80e6-838b-c823fa23f16f" class=""><em>Nuowei Liu*, Jiahao Kuang*, Yanting Liu, Changzhi Sun, </em><em><strong>Tao Ji#</strong></em><em>, Yuanbin Wu#, Man Lan#</em></p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80f8-af40-dd9981cb07c8" class="column-list"><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8066-90d1-d29a81fa03cf" style="width:12.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-80c9-a8ef-c4f730f6de8a" class=""><mark class="highlight-blue"><mark class="highlight-blue_background">  </mark></mark><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>ACL25</strong></mark></mark><mark class="highlight-blue"><mark class="highlight-blue_background">  <br/>  </mark></mark><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>Main</strong></mark></mark><mark class="highlight-blue"><mark class="highlight-blue_background">  </mark></mark></p></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80f9-89c8-e87fb641deae" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8097-a0dd-d21459f4d861" class=""><strong><a href="https://arxiv.org/abs/2502.14837">Towards Economical Inference: Enabling DeepSeek&#x27;s Multi-Head Latent Attention in Any Transformer-based LLMs</a></strong></p></div><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8079-ad5f-f5ca55698f5b" class=""><em><strong>Tao Ji</strong></em><em>, Bin Guo, Yuanbin Wu, Qipeng Guo, Lixing Shen, Zhan Chen, Xipeng Qiu, Qi Zhang, Tao Gui#</em></p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-807e-b368-f0a09bfa70f2" class="column-list"><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8068-9427-ed8eebebe5f5" style="width:12.5%" class="column"><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-804c-9ecf-cba2f8d3822a" class=""><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>  ACL25 </strong></mark></mark><mark class="highlight-blue_background"><strong> <br/></strong></mark><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>  Oral  </strong></mark></mark></p></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80f9-9ce2-e2005ec3b2f3" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="288c8ffd-17f5-8096-a90a-d4c0a2f8c1e0" class=""><strong><a href="https://arxiv.org/abs/2503.04167">The Role of Visual Modality in Multimodal Mathematical Reasoning: Challenges and Insights</a></strong></p></div><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8005-955d-f16e67fbd528" class=""><em>Yufang Liu</em><em><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span></span></span></em><em>, Yao Du</em><em><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span></span></span></em><em>, </em><em><strong>Tao Ji#</strong></em><em>, Jianing Wang, Yang Liu, Yuanbin Wu#, Aimin Zhou#, Mengdi Zhang, Xunliang Cai</em></p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8046-b32a-e312e910104f" class="column-list"><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8080-bdb7-ff9c8985f481" style="width:12.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-802d-b648-f12c837181b9" class=""><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>  EMNLP24  <br/>  Oral  </strong></mark></mark></p></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8084-9ceb-f4942f68b05b" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-80fd-a11d-fe2259381e2e" class=""><strong><a href="https://aclanthology.org/2024.emnlp-main.1016.pdf">Investigating and Mitigating Object Hallucinations in Pretrained Vision-Language (CLIP) Models</a></strong></p></div><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-80c8-9e10-f0460bdaa48d" class=""><em>Yufang Liu</em><em><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span></span></span></em><em>, </em><em><strong>Tao Ji</strong></em><em><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span></span></span></em><em>, Changzhi Sun, Yuanbin Wu, Aimin Zhou</em></p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8021-8bb1-c529c5315f6a" class="column-list"><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80de-8019-dfbc00786578" style="width:12.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-80e7-8f1b-feba290226fb" class=""><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>  EMNLP24<br/>  Findings  </strong></mark></mark></p></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8043-a889-fabca0ab50c6" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-80ee-a6c3-d5ea6bc7b4bf" class=""><strong><a href="https://aclanthology.org/2024.findings-emnlp.417.pdf">LongHeads: Multi-Head Attention is Secretly a Long Context Processor</a></strong></p></div><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8032-9690-c84cb2dc8779" class=""><em>Yi Lu, Xin Zhou, Wei He, Jun Zhao, </em><em><strong>Tao Ji#</strong></em><em>, Tao Gui#, Qi Zhang#, Xuanjing Huang</em></p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80c9-8624-fb5ea6316c6d" class="column-list"><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80f7-b9a8-e35f1f589d72" style="width:12.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8039-be68-fb7335868fce" class=""><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>  ACL24  <br/>  Findings  </strong></mark></mark></p></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-800a-9cbf-c707f6589bf8" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8056-b903-f9d6e252a988" class=""><strong><a href="https://aclanthology.org/2024.findings-acl.834.pdf">Length Generalization of Causal Transformers without Position Encoding</a></strong></p></div><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8019-aa76-c4c280380334" class=""><em>Jie Wang</em><em><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span></span></span></em><em>, </em><em><strong>Tao Ji</strong></em><em><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span></span></span></em><em>, Yuanbin Wu#, Hang Yan, Tao Gui, Qi Zhang, Xuanjing Huang, Xiaoling Wang#</em></p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80fd-895f-e4f7828e4bb0" class="column-list"><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-80d9-92a9-e9e6cd9652de" style="width:12.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-803b-bbf8-d21a1a1fc5e7" class=""><mark class="highlight-blue"><mark class="highlight-blue_background"><strong>  ACL19  </strong></mark></mark></p></div></div></div><div style="display:contents" dir="auto"><div id="204c8ffd-17f5-8024-8cfa-d43a65808623" style="width:87.5%" class="column"><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-8076-8c20-ebb9d5d06bdd" class=""><strong><a href="https://aclanthology.org/P19-1237/">Graph-based Dependency Parsing with Graph Neural Networks</a></strong></p></div><div style="display:contents" dir="auto"><p id="204c8ffd-17f5-802b-8a11-dbe2f62709fb" class=""><em><strong>Tao Ji</strong></em><em>, Yuanbin Wu, Man Lan</em></p></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="151c8ffd-17f5-80b6-9eaf-c3542cd35037" class="">Selected Awards</h2></div><div style="display:contents" dir="auto"><ul id="287c8ffd-17f5-80cc-85dc-ea4efc89bfdc" class="bulleted-list"><li style="list-style-type:disc">Postdoctoral Fellowship Program (Grade C) of China Postdoctoral Science Foundation, 2023</li></ul></div><div style="display:contents" dir="auto"><ul id="151c8ffd-17f5-80d2-bdcb-c8bc1e84cb3e" class="bulleted-list"><li style="list-style-type:disc">Shanghai Post-doctoral Excellence Program, 2023</li></ul></div><div style="display:contents" dir="auto"><ul id="151c8ffd-17f5-80ce-b258-f3ff963fa797" class="bulleted-list"><li style="list-style-type:disc">Rank 1 at CCL2021 shared task: Multi-source Cross-domain Dependency Parsing, 2021</li></ul></div><div style="display:contents" dir="auto"><ul id="151c8ffd-17f5-8038-820b-ddf8cbf032ab" class="bulleted-list"><li style="list-style-type:disc">Rank 2 at NLPCC2019 shared task: Cross-domain Dependency Parsing, 2019</li></ul></div><div style="display:contents" dir="auto"><ul id="151c8ffd-17f5-8065-887a-f3daf971901c" class="bulleted-list"><li style="list-style-type:disc">First Prize in Chinese undergraduate computer design contest, 2015</li></ul></div><div style="display:contents" dir="auto"><ul id="151c8ffd-17f5-8064-b670-e99d4f335245" class="bulleted-list"><li style="list-style-type:disc">Silver Medal in <a href="http://acm2015.shu.edu.cn/">ACM-ICPC Asia EC-FINAL Contest</a> (2015) and  <a href="http://acm.nwpu.edu.cn/">Asia Xian Regional Contest</a> (2014)</li></ul></div><div style="display:contents" dir="auto"><h2 id="288c8ffd-17f5-8065-93eb-f940ab0f950b" class=""> Professional Service</h2></div><div style="display:contents" dir="auto"><ul id="288c8ffd-17f5-8077-91ca-d60a869c5167" class="bulleted-list"><li style="list-style-type:disc">Area Chair for ACL Rolling Review (ARR)</li></ul></div><div style="display:contents" dir="auto"><ul id="288c8ffd-17f5-8037-8467-f1db5d3fdd01" class="bulleted-list"><li style="list-style-type:disc">Reviewer for *ACL, ICLR/NeurIPS/AAAI, Science China Information Sciences, etc.</li></ul></div><div style="display:contents" dir="auto"><ul id="288c8ffd-17f5-807c-8880-c2957db09476" class="bulleted-list"><li style="list-style-type:disc">Evaluation Co-chairs for NLPCC2025</li></ul></div><div style="display:contents" dir="auto"><ul id="288c8ffd-17f5-80a4-ae67-efe0b4854af1" class="bulleted-list"><li style="list-style-type:disc">Invited <mark class="highlight-default"><mark class="highlight-default_background">Speaker</mark></mark> at LLM Alignment Workshop for NLPCC2024</li></ul></div><div style="display:contents" dir="auto"><h2 id="151c8ffd-17f5-8000-980b-e53c61cdc681" class="">Contact</h2></div><div style="display:contents" dir="auto"><p id="151c8ffd-17f5-807a-986d-f798f0bf293e" class="">📧 <em><a href="mailto:taoji@fudan.edu.cn">taoji[at]fudan.edu.cn</a></em></p></div><div style="display:contents" dir="auto"><p id="28ac8ffd-17f5-8092-9835-fb2d5f73e42f" class="">
+</p></div><div style="display:contents" dir="auto"><p id="28ac8ffd-17f5-8078-8ecf-e4a630ca23d6" class="">📍 Offices</p></div><div style="display:contents" dir="auto"><div id="28ac8ffd-17f5-80b3-8c5d-c3cb3049b531" class="column-list"><div style="display:contents" dir="auto"><div id="28ac8ffd-17f5-80fb-b73e-eab97e8bd655" style="width:50%" class="column"><div style="display:contents" dir="auto"><ul id="28ac8ffd-17f5-8087-b1ba-ff92c67b8649" class="bulleted-list"><li style="list-style-type:disc">639 Foreign Languages and Literatures Building<br/>Handan Campus<br/>220 Handan Road, Shanghai 200433, China</li></ul></div></div></div><div style="display:contents" dir="auto"><div id="28ac8ffd-17f5-80c9-bc9a-eb534ed543c2" style="width:50%" class="column"><div style="display:contents" dir="auto"><ul id="28ac8ffd-17f5-80ae-a6af-c4f81e9c832f" class="bulleted-list"><li style="list-style-type:disc">A5008, No. 2 Interdisciplinary Research Building<br/>Jiangwan Campus<br/>2005 Songhu Road, Shanghai 200438, China</li></ul></div></div></div></div></div><div style="display:contents" dir="auto"><p id="28ac8ffd-17f5-80e9-8453-c1059b06152d" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
