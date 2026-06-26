@@ -1,2 +1,0 @@
-# Ushio's Blog
-
